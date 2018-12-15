@@ -1,0 +1,4 @@
+ <job><context><options preserveOrder="true"><option name="num" value="5"/></options></context><defaultTab>summary</defaultTab><description>scheduling to run every minute</description><executionEnabled>true</executionEnabled><id>41279452-a27b-4bc2-979d-c791f46aa40b</id><loglevel>INFO</loglevel><name>schedule</name><nodeFilterEditable>false</nodeFilterEditable><schedule></schedule><scheduleEnabled>true</scheduleEnabled><sequence keepgoing="false" strategy="node-first"><command><exec>echo ${option.num}</exec></command><command><script>echo "comparing number"
+if ["@option.num@" -eq 5 ]; then
+   echo "Do Something "
+fi</script><scriptargs/></command></sequence><timeZone>UTC</timeZone><uuid>41279452-a27b-4bc2-979d-c791f46aa40b</uuid></job></joblist>
